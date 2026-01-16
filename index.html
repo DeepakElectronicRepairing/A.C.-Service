@@ -4,13 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Deepak Refrigerator & Electronics - Jodhpur</title>
+<title>AC Repair & Service | Deepak Electronics</title>
 
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,167 +15,95 @@
 <style>
 body{
     font-family:'Poppins',sans-serif;
+    background:#f5f6f8;
 }
-
-.hero-bg{
-    background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-    url('images/airconditionerrepair.jpg');
-    background-size:cover;
-    background-position:center;
-}
-
-.gold-theme{
+.gold-btn{
     background:linear-gradient(90deg,#f59e0b,#facc15);
-    transition:all .3s ease;
 }
-
-.gold-theme:hover{
-    background:linear-gradient(90deg,#fbbf24,#f59e0b);
-    transform:scale(1.05);
+.gold-btn:hover{
+    background:linear-gradient(90deg,#facc15,#f59e0b);
 }
-
-.text-gold{color:#b8860b;}
 </style>
 </head>
 
-<body class="bg-white text-gray-800 pb-20">
-
-<!-- HEADER -->
-<header class="flex items-center justify-between p-4 border-b sticky top-0 bg-white shadow z-50">
-    <i class="fas fa-bars text-xl"></i>
-    <h1 class="font-bold text-sm md:text-lg">Deepak Refrigerator & Electronics</h1>
-    <div class="flex gap-3">
-        <i class="fas fa-plus-square text-xl"></i>
-        <i class="fas fa-share-alt text-xl"></i>
-    </div>
-</header>
-
-<!-- HERO -->
-<section class="hero-bg text-center py-16 px-6 border-b">
-    <p class="uppercase text-xs font-bold text-gray-600 mb-2">
-        Trusted AC & Home Appliance
-    </p>
-
-    <h2 class="text-4xl font-extrabold mb-6">
-        Repair & Services
-    </h2>
-
-    <a href="tel:+917220820343"
-       class="gold-theme text-white px-10 py-3 rounded-full font-bold shadow-lg inline-block">
-       Enquire Now
-    </a>
-</section>
-
-<!-- POSTER IMAGE -->
-<section class="bg-white py-12 px-4">
-    <img src="images/poster.jpg"
-         alt="Service Poster"
-         class="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl border-4 border-yellow-600">
-</section>
+<body>
 
 <!-- OUR SERVICES -->
-<section class="py-12 px-4 bg-gray-50">
-<h3 class="text-3xl text-center font-bold mb-10 border-b-4 border-yellow-500 w-max mx-auto pb-2 tracking-wide">
-Our Services
-</h3>
+<section class="py-14 px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+        Our Services
+    </h2>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<!-- AC Repair -->
-<div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition transform hover:-translate-y-2">
-<img src="images/ac-repair-service.jpg" class="w-full h-44 object-cover rounded-xl mb-4">
-<h4 class="text-xl font-semibold mb-2">AC Repair & Service</h4>
-<p class="text-sm text-gray-600 mb-4">
-Expert AC repair, gas filling and servicing.
-</p>
-<button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
-Enquire Now
-</button>
-</div>
+        <!-- AC Repair -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="images/ac-repair.jpg"
+                 class="w-full h-56 object-cover"
+                 alt="AC Repair Service">
 
-<!-- AC Installation -->
-<div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition transform hover:-translate-y-2">
-<img src="images/Acinstallation.jpg" class="w-full h-44 object-cover rounded-xl mb-4">
-<h4 class="text-xl font-semibold mb-2">AC Installation</h4>
-<p class="text-sm text-gray-600 mb-4">
-Professional AC installation & uninstallation services.
-</p>
-<button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
-Enquire Now
-</button>
-</div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    AC Repair & Service
+                </h3>
 
-<!-- Washing Machine -->
-<div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition transform hover:-translate-y-2">
-<img src="images/washingmachine.jpg" class="w-full h-44 object-cover rounded-xl mb-4">
-<h4 class="text-xl font-semibold mb-2">Washing Machine Repair</h4>
-<p class="text-sm text-gray-600 mb-4">
-Repair & service for all types of washing machines.
-</p>
-<button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
-Enquire Now
-</button>
-</div>
+                <p class="text-gray-600 text-sm mb-5">
+                    Expert AC repair, gas filling and professional servicing.
+                </p>
 
-<!-- Other Appliances -->
-<div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition transform hover:-translate-y-2">
-<img src="https://images.unsplash.com/photo-1558389186-438424b00a32?auto=format&fit=crop&w=400"
-     class="w-full h-44 object-cover rounded-xl mb-4">
-<h4 class="text-xl font-semibold mb-2">Other Home Appliances</h4>
-<p class="text-sm text-gray-600 mb-4">
-Refrigerator, RO, microwave & more appliance repair.
-</p>
-<button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
-Enquire Now
-</button>
-</div>
+                <a href="tel:+917220820343"
+                   class="gold-btn text-white block text-center py-3 rounded-xl font-bold">
+                    Enquire Now
+                </a>
+            </div>
+        </div>
 
-</div>
+        <!-- AC Installation -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="images/ac-installation.jpg"
+                 class="w-full h-56 object-cover"
+                 alt="AC Installation">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    AC Installation
+                </h3>
+
+                <p class="text-gray-600 text-sm mb-5">
+                    New AC installation & uninstallation with proper fitting.
+                </p>
+
+                <a href="tel:+917220820343"
+                   class="gold-btn text-white block text-center py-3 rounded-xl font-bold">
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Washing Machine -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="images/washingmachine.jpg"
+                 class="w-full h-56 object-cover"
+                 alt="Washing Machine Repair">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">
+                    Washing Machine Repair
+                </h3>
+
+                <p class="text-gray-600 text-sm mb-5">
+                    All brand washing machine repair & servicing at home.
+                </p>
+
+                <a href="tel:+917220820343"
+                   class="gold-btn text-white block text-center py-3 rounded-xl font-bold">
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+
+    </div>
 </section>
-
-<!-- CONTACT -->
-<section class="py-12 px-6 bg-white text-center">
-<h3 class="text-3xl font-bold mb-8">Contact Us</h3>
-
-<div class="space-y-6 max-w-md mx-auto">
-
-<div>
-<i class="fas fa-map-marker-alt text-gold text-3xl mb-2"></i>
-<p class="font-bold">Address</p>
-<p class="text-gray-600">
-Mehro Ka Bas, Jodhpur, Rajasthan
-</p>
-</div>
-
-<div class="border-t pt-6">
-<i class="fas fa-phone-alt text-gold text-3xl mb-2"></i>
-<p class="font-bold">Call Us</p>
-<p class="text-lg font-bold">+91 72208 20343</p>
-</div>
-
-<div class="border-t pt-6">
-<i class="fas fa-clock text-gold text-3xl mb-2"></i>
-<p class="font-bold">Timing</p>
-<p class="text-gray-600">09:00 AM – 08:30 PM</p>
-</div>
-
-</div>
-</section>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/917220820343"
-class="fixed bottom-24 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl animate-bounce">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- BOTTOM NAV -->
-<nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-4 shadow">
-<a href="#" class="text-gold"><i class="fas fa-home text-2xl"></i></a>
-<a href="mailto:mohitss1285@gmail.com"><i class="fas fa-envelope text-2xl"></i></a>
-<a href="tel:+917220820343"><i class="fas fa-phone text-2xl"></i></a>
-<a href="#"><i class="fas fa-map-marker-alt text-2xl"></i></a>
-</nav>
 
 </body>
 </html>

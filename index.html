@@ -4,103 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepak Refrigerator & Electronics - Jodhpur</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         .hero-bg {
-            background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), 
-                        url('<img src="images/poster.jpg" alt="Poster">');
+            background:
+                linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+                url('images/poster.jpg');
             background-size: cover;
             background-position: center;
         }
-        .gold-theme { background-color: #b8860b; }
-        .text-gold { color: #b8860b; }
+
+        .gold-theme {
+            background-color: #b8860b;
+        }
+
+        .text-gold {
+            color: #b8860b;
+        }
     </style>
 </head>
+
 <body class="bg-white text-gray-800 font-sans pb-20">
 
+    <!-- HEADER -->
     <header class="flex items-center justify-between p-4 border-b sticky top-0 bg-white z-50 shadow-sm">
         <i class="fas fa-bars text-xl text-gray-600"></i>
-        <h1 class="font-bold text-gray-800 text-sm md:text-lg">Deepak Refrigerator & Electronics</h1>
+        <h1 class="font-bold text-gray-800 text-sm md:text-lg">
+            Deepak Refrigerator & Electronics
+        </h1>
         <div class="flex gap-3 text-gray-600">
             <i class="fas fa-plus-square text-xl"></i>
             <i class="fas fa-share-alt text-xl"></i>
         </div>
     </header>
 
-    <section class="hero-bg text-center py-12 px-6 border-b">
-        <p class="text-gray-500 tracking-wide uppercase text-xs font-bold mb-2">Trusted AC and Home Appliance</p>
-        <h2 class="text-4xl font-serif font-extrabold text-gray-900 leading-tight mb-6">Repair and Services</h2>
-        <a href="tel:+917220820343" class="gold-theme text-white px-10 py-3 rounded-full font-bold shadow-lg inline-block transition hover:scale-105">
+    <!-- HERO SECTION -->
+    <section class="hero-bg text-center py-14 px-6 border-b">
+        <p class="text-gray-600 tracking-wide uppercase text-xs font-bold mb-2">
+            Trusted AC & Home Appliance
+        </p>
+
+        <h2 class="text-4xl font-serif font-extrabold text-gray-900 mb-6">
+            Repair & Services
+        </h2>
+
+        <a href="tel:+917220820343"
+           class="gold-theme text-white px-10 py-3 rounded-full font-bold shadow-lg inline-block hover:scale-105 transition">
             Enquire Now
         </a>
-        <div class="mt-10">
-            <img src="https://img.freepik.com/free-photo/repairman-checking-air-conditioner_23-2148174474.jpg" 
-                 alt="AC Technician" class="w-full max-w-sm mx-auto rounded-2xl shadow-2xl border-4 border-white">
-        </div>
     </section>
 
+    <!-- SERVICES -->
     <section class="py-12 px-4 bg-gray-50">
-        <h3 class="text-3xl text-center font-serif font-bold mb-10 border-b-2 border-yellow-600 w-max mx-auto pb-2">Our Services</h3>
+        <h3 class="text-3xl text-center font-serif font-bold mb-10 border-b-2 border-yellow-600 w-max mx-auto pb-2">
+            Our Services
+        </h3>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition">
-                <img src="https://images.unsplash.com/photo-1571175432250-4a86b1397486?auto=format&fit=crop&w=400" class="w-full h-44 object-cover rounded-xl mb-4">
-                <h4 class="font-bold text-xl mb-2"> AC Repair & Services</h4>
-                <p class="text-sm text-gray-600 mb-4">Expert handling of defrosting issues, leaks, and power failures for all fridge models.</p>
-                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">Enquire Now</button>
+                <img src="https://images.unsplash.com/photo-1571175432250-4a86b1397486?auto=format&fit=crop&w=400"
+                     class="w-full h-44 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-xl mb-2">AC Repair & Service</h4>
+                <p class="text-sm text-gray-600 mb-4">
+                    Professional AC repairing, gas filling and maintenance.
+                </p>
+                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
+                    Enquire Now
+                </button>
             </div>
 
             <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition">
-                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400" class="w-full h-44 object-cover rounded-xl mb-4">
-                <h4 class="font-bold text-xl mb-2"> AC Installation Service</h4>
-                <p class="text-sm text-gray-600 mb-4">Round-the-clock emergency AC services including gas filling and deep cleaning.</p>
-                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">Enquire Now</button>
+                <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400"
+                     class="w-full h-44 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-xl mb-2">AC Installation</h4>
+                <p class="text-sm text-gray-600 mb-4">
+                    New AC installation & uninstallation service.
+                </p>
+                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
+                    Enquire Now
+                </button>
             </div>
 
             <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition">
-                <img src="https://images.unsplash.com/photo-1558389186-438424b00a32?auto=format&fit=crop&w=400" class="w-full h-44 object-cover rounded-xl mb-4">
-                <h4 class="font-bold text-xl mb-2">Electrical Goods Dealers</h4>
-                <p class="text-sm text-gray-600 mb-4">Wide range of reliable electronic goods and professional installation services.</p>
-                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">Enquire Now</button>
+                <img src="https://images.unsplash.com/photo-1558389186-438424b00a32?auto=format&fit=crop&w=400"
+                     class="w-full h-44 object-cover rounded-xl mb-4">
+                <h4 class="font-bold text-xl mb-2">Home Appliances</h4>
+                <p class="text-sm text-gray-600 mb-4">
+                    Fridge, washing machine, RO, microwave repair.
+                </p>
+                <button class="gold-theme text-white w-full py-2 rounded-lg font-semibold">
+                    Enquire Now
+                </button>
             </div>
 
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="py-12 px-6 bg-white text-center">
         <h3 class="text-3xl font-serif font-bold mb-8">Contact Us</h3>
-        
+
         <div class="space-y-6 max-w-md mx-auto">
-            <div class="flex flex-col items-center">
+
+            <div>
                 <i class="fas fa-map-marker-alt text-gold text-3xl mb-2"></i>
-                <p class="font-bold">Our Office Address</p>
-                <p class="text-gray-600"> Badlo Ka Chowk, Mehro Ka Bas, Chamunda Mataji Ke Mandir Ke Samne, Jodhpur, Rajasthan 342001</p>
+                <p class="font-bold">Address</p>
+                <p class="text-gray-600">
+                    Mehro Ka Bas, Jodhpur, Rajasthan
+                </p>
             </div>
 
-            <div class="flex flex-col items-center border-t pt-6">
+            <div class="border-t pt-6">
                 <i class="fas fa-phone-alt text-gold text-3xl mb-2"></i>
                 <p class="font-bold">Call Us</p>
-                <p class="text-gray-900 text-lg font-bold">+91 72208 20343 </p>
+                <p class="text-lg font-bold">+91 72208 20343</p>
             </div>
 
-            <div class="flex flex-col items-center border-t pt-6">
+            <div class="border-t pt-6">
                 <i class="fas fa-clock text-gold text-3xl mb-2"></i>
-                <p class="font-bold">Our Timings</p>
-                <p class="text-gray-600"> Monday to Sunday 09:00AM to 08:30PM</p>
+                <p class="font-bold">Timing</p>
+                <p class="text-gray-600">09:00 AM – 08:30 PM</p>
             </div>
+
         </div>
     </section>
 
-    <a href="https://wa.me/917220820343" class="fixed bottom-24 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl z-50 animate-bounce">
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/917220820343"
+       class="fixed bottom-24 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl animate-bounce">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-4 shadow-2xl z-50">
+    <!-- BOTTOM NAV -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-4 shadow-2xl">
         <a href="#" class="text-gold"><i class="fas fa-home text-2xl"></i></a>
-        <a href="mailto: mohitss1285@gmail.com" class="text-gray-400"><i class="fas fa-envelope text-2xl"></i></a>
+        <a href="mailto:mohitss1285@gmail.com" class="text-gray-400"><i class="fas fa-envelope text-2xl"></i></a>
         <a href="tel:+917220820343" class="text-gray-400"><i class="fas fa-phone text-2xl"></i></a>
-        <a href="https://maps.app.goo.gl/cTF29jEyTwEHDc6Z8" class="text-gray-400"><i class="fas fa-map-marker-alt text-2xl"></i></a>
+        <a href="#" class="text-gray-400"><i class="fas fa-map-marker-alt text-2xl"></i></a>
     </nav>
 
 </body>

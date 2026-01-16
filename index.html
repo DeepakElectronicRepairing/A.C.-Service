@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AC Repair & Service | Deepak Electronics</title>
+<title>Deepak AC Repair & Home Appliances | Jodhpur</title>
 
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,6 +19,13 @@
 body{
     font-family:'Poppins',sans-serif;
     background:#f5f6f8;
+}
+.hero{
+    background:
+    linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+    url("images/hero-bg.jpg");
+    background-size:cover;
+    background-position:center;
 }
 .gold-btn{
     background:linear-gradient(90deg,#f59e0b,#facc15);
@@ -28,9 +38,42 @@ body{
 
 <body>
 
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+        <h1 class="font-bold text-lg">Deepak AC & Electronics</h1>
+        <a href="tel:+917220820343" class="text-yellow-600 font-bold">
+            <i class="fa fa-phone"></i> Call Now
+        </a>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero text-center py-20 px-4">
+    <p class="uppercase text-sm font-semibold text-gray-600 mb-2">
+        Trusted AC & Home Appliance Service
+    </p>
+
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Repair & Services
+    </h2>
+
+    <a href="tel:+917220820343"
+       class="gold-btn text-white px-10 py-4 rounded-full font-bold inline-block shadow-lg">
+        Enquire Now
+    </a>
+</section>
+
+<!-- IMAGE BETWEEN -->
+<section class="py-12 bg-white">
+    <img src="images/ac-repair.jpg"
+         alt="AC Service"
+         class="w-full max-w-5xl mx-auto rounded-2xl shadow-xl">
+</section>
+
 <!-- OUR SERVICES -->
-<section class="py-14 px-4">
-    <h2 class="text-3xl font-bold text-center mb-12">
+<section class="py-14 px-4 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-12 border-b-4 border-yellow-500 w-fit mx-auto pb-2">
         Our Services
     </h2>
 
@@ -40,7 +83,7 @@ body{
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
             <img src="images/ac-repair.jpg"
                  class="w-full h-56 object-cover"
-                 alt="AC Repair Service">
+                 alt="AC Repair">
 
             <div class="p-6">
                 <h3 class="text-xl font-semibold mb-2">
@@ -48,7 +91,7 @@ body{
                 </h3>
 
                 <p class="text-gray-600 text-sm mb-5">
-                    Expert AC repair, gas filling and professional servicing.
+                    Expert AC repair, gas filling and servicing.
                 </p>
 
                 <a href="tel:+917220820343"
@@ -70,7 +113,7 @@ body{
                 </h3>
 
                 <p class="text-gray-600 text-sm mb-5">
-                    New AC installation & uninstallation with proper fitting.
+                    New AC installation & uninstallation services.
                 </p>
 
                 <a href="tel:+917220820343"
@@ -92,7 +135,7 @@ body{
                 </h3>
 
                 <p class="text-gray-600 text-sm mb-5">
-                    All brand washing machine repair & servicing at home.
+                    Repair & servicing of all washing machine brands.
                 </p>
 
                 <a href="tel:+917220820343"
@@ -104,6 +147,23 @@ body{
 
     </div>
 </section>
+
+<!-- CONTACT -->
+<section class="py-14 px-4 bg-white text-center">
+    <h2 class="text-3xl font-bold mb-10">Contact Us</h2>
+
+    <div class="space-y-6">
+        <p><i class="fa fa-map-marker-alt text-yellow-500"></i> Mehro Ka Bas, Jodhpur</p>
+        <p><i class="fa fa-phone text-yellow-500"></i> +91 72208 20343</p>
+        <p><i class="fa fa-clock text-yellow-500"></i> 09:00 AM – 08:30 PM</p>
+    </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/917220820343"
+   class="fixed bottom-6 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-3xl shadow-xl">
+   <i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>

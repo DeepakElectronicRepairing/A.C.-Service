@@ -8,6 +8,9 @@
 
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Swiper Slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -85,6 +88,60 @@
     <li><a href="#contact" class="block px-6 py-4">Contact Us</a></li>
   </ul>
 </div>
+  
+  <!-- ================= HERO SLIDER ================= -->
+<section class="relative">
+
+  <div class="swiper heroSwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative min-h-[90vh] flex items-center">
+        <img src="images/airconditionerrepair.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/80"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-left">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+            Home Appliance<br>Repair Service
+          </h1>
+          <p class="text-lg md:text-2xl mb-6">
+            Same Day Service • Expert Technicians
+          </p>
+          <a href="tel:+917220820343"
+             class="inline-block bg-blue-700 text-white px-8 py-4 rounded-full font-bold text-lg">
+            Hire Us Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide relative min-h-[90vh] flex items-center">
+        <img src="images/refrigeratorrepair.jpg"
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-white/80"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-6 text-left">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+            Refrigerator & AC<br>Repair Experts
+          </h1>
+          <p class="text-lg md:text-2xl mb-6">
+            Fast • Reliable • Affordable
+          </p>
+          <a href="https://wa.me/917220820343"
+             class="inline-block bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg">
+            WhatsApp Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dots -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+</section>
 
 <!-- ==================== NEW HERO SECTION - ASSIMIMOX STYLE ==================== -->
 <section id="home" class="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center text-center px-5 py-16 md:py-24 overflow-hidden">
@@ -310,6 +367,24 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', closeMenu);
     });
 });
+</script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+  new Swiper(".heroSwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    effect: "slide",
+    speed: 900,
+  });
 </script>
 
 </body>

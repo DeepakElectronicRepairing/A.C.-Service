@@ -30,13 +30,11 @@
 }
 
     .slide {
-      position: absolute;
-      inset: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
+  height: 80vh;                 /* increase slider height */
+  background-size: cover;       /* fit image */
+  background-position: center;  /* center image */
+  background-repeat: no-repeat;
+}
 
     .slide.active {
       opacity: 1;

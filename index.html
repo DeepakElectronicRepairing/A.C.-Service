@@ -16,40 +16,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  body {
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 50px; /* Space for fixed bottom navigation */
-  }
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
-  .gold-theme {
-    background: linear-gradient(90deg, #f59e0b, #facc15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.hero-bg {
+  background:
+    linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+    url('images/airconditionerrepair.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
-  .gold-theme:hover {
-    transform: scale(1.05);
-  }
+.gold-theme {
+  background: linear-gradient(90deg, #f59e0b, #facc15);
+  transition: all .3s ease;
+}
 
-  .text-gold {
-    color: #b8860b;
-  }
+.gold-theme:hover {
+  transform: scale(1.05);
+}
 
-  .hero-gradient {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.92),
-      rgba(255, 255, 255, 0.85) 40%,
-      rgba(240, 249, 255, 0.8)
-    );
-  }
+.text-gold {
+  color: #b8860b;
+}
 </style>
+</head>
 
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 pb-24">
 
 <!-- ================= HEADER ================= -->
 <header class="flex items-center justify-between p-4 border-b sticky top-0 bg-white shadow z-50">
 
-  <!-- EMPTY LEFT -->
+  <!-- EMPTY LEFT (keeps title centered) -->
   <div class="w-6"></div>
 
   <!-- TITLE -->
@@ -57,7 +56,7 @@
     Deepak Refrigerator & Electronics
   </h1>
 
-  <!-- MENU ICON -->
+  <!-- MENU ICON (RIGHT - THREE LINES) -->
   <button onclick="toggleMenu()" class="text-xl">
     <i class="fas fa-bars"></i>
   </button>
@@ -67,10 +66,11 @@
 <!-- ================= MOBILE MENU ================= -->
 <div id="mobileMenu" class="hidden fixed top-16 left-0 w-full bg-white shadow-lg z-50">
   <ul class="divide-y text-lg">
+
     <li><a href="#home" class="block px-6 py-4 text-orange-500 font-semibold">Home</a></li>
     <li><a href="#about" class="block px-6 py-4">About Us</a></li>
 
-    <li onclick="toggleServices(event)" class="px-6 py-4 flex justify-between items-center cursor-pointer">
+    <li onclick="toggleServices()" class="px-6 py-4 flex justify-between items-center cursor-pointer">
       <span class="text-orange-500 font-semibold">Services</span>
       <i class="fas fa-chevron-down"></i>
     </li>
@@ -86,71 +86,20 @@
   </ul>
 </div>
 
-<!-- ==================== NEW HERO SECTION - ASSIMIMOX STYLE ==================== -->
-<section id="home" class="relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center text-center px-5 py-16 md:py-24 overflow-hidden">
+<!-- ================= HERO ================= -->
+<section id="home" class="hero-bg text-center py-20 px-6 border-b">
+  <p class="uppercase text-sm font-bold text-gray-700 mb-3">
+    Trusted Home Appliance Service
+  </p>
 
-  <!-- Background Image -->
-  <div class="absolute inset-0 z-0">
-    <img 
-      src="images/airconditionerrepair.jpg"  
-      class="w-full h-full object-cover"
-    >
-    <div class="absolute inset-0 hero-gradient"></div>
-  </div>
+  <h2 class="text-4xl font-extrabold mb-8">
+    Repair & Services
+  </h2>
 
-  <!-- Main Content -->
-  <div class="relative z-10 max-w-5xl mx-auto w-full">
-    <div class="inline-block mb-5 md:mb-6">
-      <span class="bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm md:text-base font-bold tracking-wider shadow-md">
-        PROFESSIONAL APPLIANCE REPAIR
-      </span>
-    </div>
-
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6 md:mb-8">
-      Home Appliances<br>Repair Service
-    </h1>
-
-    <div class="max-w-4xl mx-auto mb-10 md:mb-12">
-      <p class="text-2xl md:text-4xl font-bold text-gray-900 mb-5 leading-snug">
-        Same Day Service <span class="text-blue-700"></span><br>
-
-      <p class="text-lg md:text-2xl text-gray-800 font-medium">
-        Call <span class="font-extrabold">09:30AM To 08:30PM</span> (Monday – Sunday)<br>
-        And we will be at your door <span class="font-extrabold text-blue-700">TODAY</span>,
-      </p>
-    </div>
-
-    <!-- Trust Badges -->
-    <div class="flex flex-wrap justify-center gap-5 md:gap-8 mb-10 md:mb-14">
-      <div class="bg-white/90 backdrop-blur-sm px-7 py-4 rounded-xl shadow-lg border border-gray-200 min-w-[140px]">
-        <p class="text-blue-700 font-bold text-xl md:text-2xl">BBB</p>
-        <p class="text-sm text-gray-600">Accredited</p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur-sm px-7 py-4 rounded-xl shadow-lg border border-gray-200 min-w-[140px]">
-        <p class="text-red-600 font-bold text-xl md:text-2xl">Angie's List</p>
-        <p class="text-sm text-gray-600">Highly Rated</p>
-      </div>
-
-      <div class="bg-white/90 backdrop-blur-sm px-7 py-4 rounded-xl shadow-lg border border-gray-200 min-w-[140px]">
-        <p class="text-yellow-600 font-bold text-xl md:text-2xl">100% Satisfaction</p>
-        <p class="text-sm text-gray-600">Guaranteed</p>
-      </div>
-    </div>
-
-    <!-- Big Call Button -->
-    <a href="tel:+917220820343"
-       class="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900
-              text-white text-xl md:text-2xl font-bold px-10 md:px-16 py-5 md:py-6 rounded-full
-              shadow-2xl transform hover:scale-105 transition-all duration-300">
-       <i class="fas fa-phone-volume mr-4 text-2xl md:text-3xl"></i>
-       CALL NOW FOR SAME DAY SERVICE
-    </a>
-
-    <p class="mt-8 text-gray-700 text-lg md:text-xl font-medium">
-      Fast Response • Expert Technicians • Jodhpur Only
-    </p>
-  </div>
+  <a href="tel:+917220820343"
+     class="gold-theme text-white px-12 py-4 rounded-full font-bold shadow-lg inline-block text-lg">
+    Call Now
+  </a>
 </section>
 
 <!-- ================= POSTER ================= -->
@@ -160,22 +109,22 @@
 </section>
 
 <!-- ================= SCHEDULE REPAIR ================= -->
-<section class="py-16 px-6 text-center border-b bg-gradient-to-b from-blue-50 to-white">
+<section class="py-16 px-6 text-center border-b">
   <i class="fas fa-calendar-check text-blue-600 text-6xl mb-6"></i>
 
-  <h3 class="text-4xl font-extrabold mb-4 text-gray-900">
-    Book Your Service Now
+  <h3 class="text-4xl font-extrabold mb-4">
+    Book Now Your Services
   </h3>
 
-  <p class="text-gray-700 max-w-2xl mx-auto mb-8 text-lg">
-    Expert repair for all home appliances • Available across Jodhpur
+  <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+    We provide expert repair services for all home appliances and are available 24/7.
   </p>
 
   <a href="tel:+917220820343"
-     class="inline-flex items-center bg-gradient-to-r from-sky-500 to-blue-700 text-white 
-            px-12 md:px-16 py-5 rounded-full font-bold text-xl shadow-xl hover:scale-105 transition">
-    <i class="fas fa-phone-alt mr-4 text-2xl"></i>
-    Schedule Repair Today
+     class="inline-block bg-gradient-to-r from-sky-400 to-blue-600 text-white 
+            px-14 py-4 rounded-xl font-bold text-xl shadow-lg hover:scale-105 transition">
+    <i class="fas fa-phone-alt mr-3"></i>
+    Schedule Repair Service
   </a>
 </section>
 
@@ -189,41 +138,91 @@
 
     <!-- AC Repair -->
     <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-      <img src="images/ac-repair-service.jpg" alt="AC Repair & Service" class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]">
+      <img 
+        src="images/ac-repair-service.jpg" 
+        alt="AC Repair & Service"
+        class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]"
+      >
       <div class="flex flex-col flex-grow">
         <h4 class="text-xl font-semibold mb-3">AC Repair & Service</h4>
-        <p class="text-sm text-gray-600 mb-6 flex-grow">Expert AC repair, gas filling and servicing.</p>
-        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">Enquire Now</button>
+        <p class="text-sm text-gray-600 mb-6 flex-grow">
+          Expert AC repair, gas filling and servicing.
+        </p>
+        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">
+          Enquire Now
+        </button>
       </div>
     </div>
 
     <!-- AC Installation -->
     <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-      <img src="images/Acinstallation.jpg" alt="AC Installation" class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]">
+      <img 
+        src="images/Acinstallation.jpg" 
+        alt="AC Installation"
+        class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]"
+      >
       <div class="flex flex-col flex-grow">
         <h4 class="text-xl font-semibold mb-3">AC Installation</h4>
-        <p class="text-sm text-gray-600 mb-6 flex-grow">Professional AC installation & uninstallation services.</p>
-        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">Enquire Now</button>
+        <p class="text-sm text-gray-600 mb-6 flex-grow">
+          Professional AC installation & uninstallation services.
+        </p>
+        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">
+          Enquire Now
+        </button>
       </div>
     </div>
 
     <!-- Washing Machine -->
     <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-      <img src="images/washingmachine.jpg" alt="Washing Machine Repair" class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]">
+      <img 
+        src="images/washingmachine.jpg" 
+        alt="Washing Machine Repair"
+        class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]"
+      >
       <div class="flex flex-col flex-grow">
         <h4 class="text-xl font-semibold mb-3">Washing Machine Repair</h4>
-        <p class="text-sm text-gray-600 mb-6 flex-grow">Repair & service for all types of washing machines.</p>
-        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">Enquire Now</button>
+        <p class="text-sm text-gray-600 mb-6 flex-grow">
+          Repair & service for all types of washing machines.
+        </p>
+        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">
+          Enquire Now
+        </button>
       </div>
     </div>
 
-    <!-- Refrigerator & Others -->
+    <!-- Other Appliances -->
     <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
-      <img src="images/refrigeratorrepair.jpg" alt="Refrigerator Repair" class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]">
+      <img 
+        src="images/refrigeratorrepair.jpg"
+        alt="Refrigerator Repair & Service"
+        class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]"
+      >
       <div class="flex flex-col flex-grow">
-        <h4 class="text-xl font-semibold mb-3">Refrigerator & More</h4>
-        <p class="text-sm text-gray-600 mb-6 flex-grow">Refrigerator, Microwave, RO & other appliance repair.</p>
-        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">Enquire Now</button>
+        <h4 class="text-xl font-semibold mb-3"> Refrigerator Repair and Service</h4>
+        <p class="text-sm text-gray-600 mb-6 flex-grow">
+          Refrigerator, RO, microwave & more appliance repair.
+        </p>
+        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">
+          Enquire Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Other Appliances -->
+    <div class="bg-white rounded-2xl p-5 shadow-md border hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col">
+      <img 
+        src="images/Ovenrepair.jpg"
+        alt=" Microwave oven Repair"
+        class="w-full h-48 object-cover rounded-xl mb-5 aspect-[4/3]"
+      >
+      <div class="flex flex-col flex-grow">
+        <h4 class="text-xl font-semibold mb-3"> Refrigerator Repair and Service</h4>
+        <p class="text-sm text-gray-600 mb-6 flex-grow">
+          Refrigerator, RO, microwave & more appliance repair.
+        </p>
+        <button class="gold-theme text-white w-full py-3 rounded-lg font-semibold mt-auto">
+          Enquire Now
+        </button>
       </div>
     </div>
 
@@ -231,7 +230,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-12 md:py-16 px-6 bg-white text-center">
+<section class="py-12 md:py-16 px-6 bg-white text-center">
   <h3 class="text-3xl md:text-4xl font-bold mb-10 md:mb-12">Contact Us</h3>
 
   <div class="space-y-8 md:space-y-10 max-w-lg mx-auto">
@@ -240,7 +239,7 @@
       <i class="fas fa-map-marker-alt text-gold text-4xl mb-4"></i>
       <p class="font-bold text-lg">Address</p>
       <p class="text-gray-600 mt-2">
-        Badlo Ka Chowk, Mehro Ka Bas,<br>Jodhpur, Rajasthan - 342001
+       Badlo Ka Chowk, Mehro Ka Bas, Jodhpur, Rajasthan - 342001
       </p>
     </div>
 
@@ -250,66 +249,50 @@
       <p class="text-xl font-bold mt-2">+91 72208 20343</p>
     </div>
 
-    <div class="border-t pt-6">
-<i class="fas fa-clock text-gold text-3xl mb-2"></i>
-<p class="font-bold">Timing</p>
-<p class="text-gray-600">09:00 AM – 08:30 PM</p>
-</div>
+    <div class="border-t pt-8">
+      <i class="fas fa-clock text-gold text-4xl mb-4"></i>
+      <p class="font-bold text-lg">Timing</p>
+      <p class="text-gray-600 mt-2">09:00 AM – 08:30 PM 
+(Monday to Sunday)</p>
+    </div>
 
-</div>
+  </div>
 </section>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/917220820343"
-class="fixed bottom-24 right-6 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center text-white text-4xl shadow-2xl animate-bounce">
-<i class="fab fa-whatsapp"></i>
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/917220820343?text=Hello%20Deepak%20Sir%2C%20I%20want%20to%20enquire%20about%20AC%20service"
+   class="fixed bottom-24 md:bottom-28 right-6 bg-green-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center text-white text-4xl md:text-5xl shadow-2xl z-50 hover:bg-green-600 transition-colors">
+  <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- BOTTOM NAV -->
-<nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-4 shadow">
-<a href="#" class="text-gold"><i class="fas fa-home text-2xl"></i></a>
-<a href="mailto:mohitss1285@gmail.com"><i class="fas fa-envelope text-2xl"></i></a>
-<a href="tel:+917220820343"><i class="fas fa-phone text-2xl"></i></a>
-<a href="#"><i class="fas fa-map-marker-alt text-2xl"></i></a>
+<!-- BOTTOM NAVIGATION -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-4 shadow-lg z-50">
+  
+
+  <!-- Google Maps Location -->
+  <a href="https://maps.app.goo.gl/rXQ55wpo6xdq9MUd9" 
+     target="_blank"
+     class="text-gold hover:text-yellow-600 transition-colors">
+    <i class="fas fa-map-marker-alt text-2xl md:text-3xl"></i>
+  </a>
+
+  <a href="mailto:mohitss1285@gmail.com" class="text-gold hover:text-yellow-600 transition-colors">
+    <i class="fas fa-envelope text-2xl md:text-3xl"></i>
+  </a>
+  <a href="tel:+917220820343" class="text-gold hover:text-yellow-600 transition-colors">
+    <i class="fas fa-phone text-2xl md:text-3xl"></i>
+
+  </a>
 </nav>
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- ================= JS ================= -->
 <script>
 function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("hidden");
+  document.getElementById("mobileMenu").classList.toggle("hidden");
 }
-
-function closeMenu() {
-    document.getElementById("mobileMenu").classList.add("hidden");
-    // Also close services submenu if open
-    document.getElementById("serviceList").classList.add("hidden");
+function toggleServices() {
+  document.getElementById("serviceList").classList.toggle("hidden");
 }
-
-function toggleServices(event) {
-    event.stopPropagation(); // Prevent closing whole menu when clicking Services
-    document.getElementById("serviceList").classList.toggle("hidden");
-}
-
-// Close menu when clicking any link
-document.addEventListener('DOMContentLoaded', function() {
-    const menuLinks = document.querySelectorAll('#mobileMenu a');
-    
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            // Only auto-close for actual navigation links (not the Services parent)
-            if (!this.parentElement.hasAttribute('onclick')) {
-                closeMenu();
-            }
-        });
-    });
-
-    // Also close when clicking Services submenu items
-    const serviceSubLinks = document.querySelectorAll('#serviceList a');
-    serviceSubLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
-});
 </script>
 
 </body>

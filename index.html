@@ -30,11 +30,13 @@
 }
 
     .slide {
-  height: 80vh;                 /* increase slider height */
-  background-size: cover;       /* fit image */
-  background-position: center;  /* center image */
-  background-repeat: no-repeat;
-}
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
 
     .slide.active {
       opacity: 1;
@@ -129,6 +131,8 @@
 
 <!-- ================= FULL-SCREEN SLIDING BACKGROUND ================= -->
 <div class="full-slider">
+  <!-- Slides -->
+  <div class="full-slider">
   <!-- Slides -->
   <div class="slide active" style="background-image: url('images/Acinstallation.jpg');"></div>
   <div class="slide" style="background-image: url('images/Ovenrepair.jpg');"></div>
